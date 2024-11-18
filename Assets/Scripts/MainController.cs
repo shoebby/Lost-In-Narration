@@ -24,6 +24,9 @@ public class MainController : MonoBehaviour
     [SerializeField] private float timer_max = 5f;
     [SerializeField] private float timer_current;
 
+    [Header("Timestamp Variables")]
+    [SerializeField] private string timestampColorHex;
+
     private string currentHexColor = "EMPTY";
     private string currentFont = "EMPTY";
     private DateTime currentDateTime;
@@ -47,6 +50,8 @@ public class MainController : MonoBehaviour
 
     void Update()
     {
+        inputField.Select();
+
         currentDateTime = DateTime.Now;
 
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -82,7 +87,10 @@ public class MainController : MonoBehaviour
     public void NewLine()
     {
         string currentTime = currentDateTime.TimeOfDay.ToString();
-        logText.text += "\n (" + currentTime.Substring(0, 8) + ") " + currentHexColor + currentFont + inputField.text + "</font>" + "</color>";
+        if (isZuhui)
+            logText.text += "\n <size=20><color=#" + timestampColorHex + ">(" + currentTime.Substring(0, 8) + ")</color></size> <size=36>" + currentHexColor + currentFont + inputField.text + "</font>" + "</size></color>";
+        else if (!isZuhui)
+            logText.text += "\n <size=20><color=#" + timestampColorHex + ">(" + currentTime.Substring(0, 8) + ")</color></size> " + currentHexColor + currentFont + inputField.text + "</font>" + "</color>";
         inputField.text = "";
         inputField.Select();
         inputField.ActivateInputField();
