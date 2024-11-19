@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b84e4fa4de228aa4a82b72950e194ad9
+guid: eb0a8744572650e4e8944410194182ba
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - absender
+  - GT Pressura Mono
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

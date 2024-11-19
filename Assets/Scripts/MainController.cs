@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using System;
+using System.IO;
 
 public class MainController : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class MainController : MonoBehaviour
     private DateTime currentDateTime;
     bool isZuhui = false;
     bool aboutIsOpen = false;
+
+    
 
     private void Awake()
     {
@@ -87,6 +90,9 @@ public class MainController : MonoBehaviour
     public void NewLine()
     {
         string currentTime = currentDateTime.TimeOfDay.ToString();
+
+        CreateText(currentTime.Substring(0, 8));
+
         if (isZuhui)
             logText.text += "\n <size=20><color=#" + timestampColorHex + ">(" + currentTime.Substring(0, 8) + ")</color></size> <size=36>" + currentHexColor + currentFont + inputField.text + "</font>" + "</size></color>";
         else if (!isZuhui)
@@ -121,5 +127,15 @@ public class MainController : MonoBehaviour
         if (!string.IsNullOrEmpty(inputField.text))
             NewLine();
         SetWriterVariables();
+    }
+
+    public void CreateText(string time)
+    {
+        string path = Application.dataPath + "/Resources/log.txt";
+        
+        if (!File.Exists(path))
+            File.WriteAllText(path, "(" + time + ") " + inputField.text + "\n");
+        else
+            File.AppendAllText(path, "(" + time + ") " + inputField.text + "\n");
     }
 }

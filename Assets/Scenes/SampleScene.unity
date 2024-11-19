@@ -186,8 +186,8 @@ MonoBehaviour:
     record.\n\nViewers are invited to experience the tension, misinterpretation,
     and elasticity of language as the narrative shifts and the original is forgotten."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 970a937ab62b98348b8db758996b670a, type: 2}
-  m_sharedMaterial: {fileID: -6809886746286516114, guid: 970a937ab62b98348b8db758996b670a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 019d16cf206e1fb44a4f58d1a2831dcd, type: 2}
+  m_sharedMaterial: {fileID: -4290767264002916262, guid: 019d16cf206e1fb44a4f58d1a2831dcd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -530,10 +530,10 @@ MonoBehaviour:
   newLine: {fileID: 460774190}
   inputField: {fileID: 1658575826}
   zu_textColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  zu_textFont: {fileID: 11400000, guid: 8ada2d10b879dd44caa9fa1f37d7f978, type: 2}
+  zu_textFont: {fileID: 11400000, guid: f5e63dcf4c6db1e48acce5aa1e0b43ba, type: 2}
   zu_colorHex: 222222
   le_textColor: {r: 0.41960785, g: 0.05490196, b: 0.48235294, a: 1}
-  le_textFont: {fileID: 11400000, guid: 970a937ab62b98348b8db758996b670a, type: 2}
+  le_textFont: {fileID: 11400000, guid: 019d16cf206e1fb44a4f58d1a2831dcd, type: 2}
   le_colorHex: 6B0E7B
   aboutGraphic: {fileID: 124813468}
   aboutGraphicAnim: {fileID: 0}
@@ -777,8 +777,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lost In Narration
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 970a937ab62b98348b8db758996b670a, type: 2}
-  m_sharedMaterial: {fileID: -6809886746286516114, guid: 970a937ab62b98348b8db758996b670a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 019d16cf206e1fb44a4f58d1a2831dcd, type: 2}
+  m_sharedMaterial: {fileID: -4290767264002916262, guid: 019d16cf206e1fb44a4f58d1a2831dcd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
